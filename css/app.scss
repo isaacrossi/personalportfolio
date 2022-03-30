@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Object Sans";
+  src: url("fonts/ObjectSans-Regular.woff2"),
+    url("fonts/ObjectSans-Regular.woff");
+}
+
+$light-color: #f3f5f6;
+$dark-color: #272f3a;
+$primary-color: #20578e;
+
+body {
+  background-color: $light-color;
+  font-family: "Object Sans";
+}

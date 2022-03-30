@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Object Sans";
+  src: url("fonts/ObjectSans-Regular.woff2"), url("fonts/ObjectSans-Regular.woff");
+}
+body {
+  background-color: #f3f5f6;
+  font-family: "Object Sans";
+}
+
+/*# sourceMappingURL=app.css.map */
