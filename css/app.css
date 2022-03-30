@@ -18,12 +18,44 @@ h4 {
   font-size: 24px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Object Sans";
+}
+
 body {
   font-size: 20px;
+  font-family: "Object Sans";
+}
+
+a {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1300px;
 }
 
 body {
   background-color: #f3f5f6;
+  color: #1f5489;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-block: 32px;
+  padding-inline: 64px;
+}
+.header__about {
+  margin-right: 40px;
+}
+.header__work {
+  margin-right: 40px;
 }
 
 /*# sourceMappingURL=app.css.map */

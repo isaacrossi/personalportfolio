@@ -25,6 +25,12 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'personalportfolio' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		
+	<header id="masthead" class="header  container">
+	 
+	 <nav class="header__nav">
+		 <a class="header__about">About</a>
+		 <a class="header__work">Work</a>
+		 <a class="header__blog">Blog</a>
+	 </nav>
+
 	</header><!-- #masthead -->

@@ -3,4 +3,24 @@
 
 body {
   background-color: $light-color;
+  color: $primary-color;
+
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  margin-block: 32px;
+  padding-inline: 64px;
+
+  &__about {
+    margin-right: 40px;
+  }
+
+  &__work {
+    margin-right: 40px;
+  }
 }
