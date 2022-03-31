@@ -68,12 +68,15 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-height: 100vh;
+  max-height: 100vh;
+  padding-top: 72px;
+  padding-bottom: 120px;
   padding-inline: 64px;
   border-bottom: #1f5489 solid 2px;
 }
 .hero__text {
   max-width: 580px;
+  align-self: flex-start;
 }
 .hero__image {
   border-radius: 40px;
