@@ -23,6 +23,7 @@ h2,
 h3,
 h4 {
   font-family: "Object Sans";
+  margin: 0px;
 }
 
 body {
@@ -36,6 +37,10 @@ a {
 
 .container {
   max-width: 1300px;
+}
+
+.reg {
+  font-weight: 400;
 }
 
 body {
@@ -56,6 +61,23 @@ body {
 }
 .header__work {
   margin-right: 40px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-inline: 64px;
+  border-bottom: #1f5489 solid 2px;
+}
+.hero__text {
+  max-width: 580px;
+}
+.hero__image {
+  border-radius: 40px;
+  max-width: 40%;
 }
 
 /*# sourceMappingURL=app.css.map */
