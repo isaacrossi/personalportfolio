@@ -31,10 +31,6 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  max-height: 100vh;
-  padding-top: 72px;
-  padding-bottom: 120px;
-  padding-inline: 64px;
   border-bottom: $primary-color solid 2px;
 
   &__text {
@@ -42,8 +38,33 @@ body {
     align-self: flex-start;
   }
 
+  &__button {
+    display: inline-block;
+    margin-top: 24px;
+    padding-block: 8px;
+    padding-inline: 24px;
+    border: solid 1px $primary-color;
+    border-radius: 24px;
+  }
+
+
   &__image {
     border-radius: 40px;
     max-width: 40%;
   }
+}
+
+.entry-content {
+
+  padding-inline: 250px;
+
+  &__info {
+    font-size: $smaller-body;
+    margin-bottom: 16px;
+  }
+
+  &__header {
+    margin-bottom: 24px;
+  }
+
 }

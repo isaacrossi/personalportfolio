@@ -26,6 +26,10 @@ h4 {
   margin: 0px;
 }
 
+p {
+  margin: 0px;
+}
+
 body {
   font-size: 20px;
   font-family: "Object Sans";
@@ -41,6 +45,12 @@ a {
 
 .reg {
   font-weight: 400;
+}
+
+.section-padding {
+  padding-top: 72px;
+  padding-bottom: 120px;
+  padding-inline: 64px;
 }
 
 body {
@@ -68,19 +78,34 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-height: 100vh;
-  padding-top: 72px;
-  padding-bottom: 120px;
-  padding-inline: 64px;
   border-bottom: #1f5489 solid 2px;
 }
 .hero__text {
   max-width: 580px;
   align-self: flex-start;
 }
+.hero__button {
+  display: inline-block;
+  margin-top: 24px;
+  padding-block: 8px;
+  padding-inline: 24px;
+  border: solid 1px #1f5489;
+  border-radius: 24px;
+}
 .hero__image {
   border-radius: 40px;
   max-width: 40%;
+}
+
+.entry-content {
+  padding-inline: 250px;
+}
+.entry-content__info {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.entry-content__header {
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=app.css.map */
