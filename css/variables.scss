@@ -4,7 +4,7 @@ $dark-color: #272f3a;
 $primary-color: #1f5489;
 
 //font-size
-$smaller-body: 16px;
+$smaller-body: 1rem;
 
 //helpers
 .container {
@@ -18,5 +18,7 @@ $smaller-body: 16px;
 .section-padding {
   padding-top: 72px;
   padding-bottom: 120px;
-  padding-inline: 64px;
+  padding-inline: 4rem;
 }
+
+

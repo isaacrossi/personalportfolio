@@ -32,6 +32,7 @@ p {
 
 body {
   font-size: 20px;
+  line-height: 1.5;
   font-family: "Object Sans";
 }
 
@@ -50,7 +51,7 @@ a {
 .section-padding {
   padding-top: 72px;
   padding-bottom: 120px;
-  padding-inline: 64px;
+  padding-inline: 4rem;
 }
 
 body {
@@ -74,11 +75,12 @@ body {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: #1f5489 solid 2px;
+  border-bottom: solid 2px #1f5489;
 }
 .hero__text {
   max-width: 580px;
@@ -94,18 +96,38 @@ body {
 }
 .hero__image {
   border-radius: 40px;
-  max-width: 40%;
+  max-width: 35vw;
 }
 
 .entry-content {
   padding-inline: 250px;
 }
 .entry-content__info {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 16px;
 }
 .entry-content__header {
   margin-bottom: 24px;
+}
+
+.recent-posts__header {
+  margin-bottom: 48px;
+}
+.recent-posts__info {
+  margin-top: 40px;
+  font-size: 1rem;
+}
+.recent-posts__title {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.recent-posts__subhead {
+  max-width: 50vw;
+  padding-bottom: 40px;
+  border-bottom: solid 1px #1f5489;
+}
+.recent-posts__subhead:last-child {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=app.css.map */

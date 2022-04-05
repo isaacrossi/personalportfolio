@@ -17,3 +17,4 @@
  <img class="hero__image" src="<?php bloginfo('template_url');?>/assets/palm_tree.svg">
 
 </section>
+
