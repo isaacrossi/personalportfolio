@@ -38,6 +38,7 @@ body {
 
 a {
   font-size: 16px;
+  text-decoration: none;
 }
 
 .container {
@@ -51,13 +52,17 @@ a {
 .section-padding {
   padding-top: 72px;
   padding-bottom: 120px;
-  padding-inline: 4rem;
+  margin-inline: 4rem;
 }
 
 body {
   background-color: #f3f5f6;
   color: #1f5489;
   margin: 0px;
+}
+
+a {
+  color: #1f5489;
 }
 
 .header {
@@ -83,10 +88,12 @@ body {
   border-bottom: solid 2px #1f5489;
 }
 .hero__text {
+  line-height: 1.3;
   max-width: 580px;
   align-self: flex-start;
 }
 .hero__button {
+  font-size: 1rem;
   display: inline-block;
   margin-top: 24px;
   padding-block: 8px;
@@ -96,7 +103,7 @@ body {
 }
 .hero__image {
   border-radius: 40px;
-  max-width: 35vw;
+  max-width: 30vw;
 }
 
 .entry-content {
@@ -116,6 +123,7 @@ body {
 .recent-posts__info {
   margin-top: 40px;
   font-size: 1rem;
+  font-style: italic;
 }
 .recent-posts__title {
   margin-top: 8px;
@@ -128,6 +136,56 @@ body {
 }
 .recent-posts__subhead:last-child {
   border-bottom: none;
+}
+
+.selected-work__content {
+  display: flex;
+}
+.selected-work__image {
+  width: 50vw;
+  margin-right: 64px;
+}
+.selected-work__header {
+  margin-bottom: 48px;
+}
+.selected-work__billow-img {
+  width: 50vw;
+  border-radius: 40px;
+  margin-bottom: 8px;
+}
+.selected-work__caption {
+  display: flex;
+  justify-content: space-between;
+}
+.selected-work__stack {
+  font-size: 1rem;
+}
+.selected-work__number {
+  font-size: 1rem;
+}
+.selected-work__details {
+  position: relative;
+}
+.selected-work__project-name {
+  margin-bottom: 16px;
+}
+.selected-work__buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.selected-work__live {
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 24px;
+  padding-block: 8px;
+  padding-inline: 24px;
+  border: solid 1px #1f5489;
+  border-radius: 24px;
+  margin-right: 40px;
+}
+.selected-work__more {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=app.css.map */

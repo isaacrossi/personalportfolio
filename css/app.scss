@@ -1,11 +1,16 @@
 @import "typography";
 @import "variables";
+@import "mixins";
 
 body {
   background-color: $light-color;
   color: $primary-color;
 
   margin: 0px;
+}
+
+a {
+  color: $primary-color;
 }
 
 .header {
@@ -35,23 +40,19 @@ body {
   border-bottom: solid 2px $primary-color;
 
   &__text {
+    line-height: 1.3;
     max-width: 580px;
     align-self: flex-start;
   }
 
   &__button {
-    display: inline-block;
-    margin-top: 24px;
-    padding-block: 8px;
-    padding-inline: 24px;
-    border: solid 1px $primary-color;
-    border-radius: 24px;
+    @include button; 
   }
 
 
   &__image {
     border-radius: 40px;
-    max-width: 35vw;
+    max-width: 30vw;
   }
 
 }
@@ -80,6 +81,7 @@ body {
   &__info {
     margin-top: 40px;
     font-size: $smaller-body;
+    font-style: italic;
   }
 
   &__title {
@@ -95,5 +97,63 @@ body {
 
   &__subhead:last-child {
     border-bottom: none;
+  }
+}
+
+.selected-work {
+
+  &__content {
+    display: flex;
+  }
+
+  &__image {
+    width: 50vw;
+    margin-right: 64px;
+  }
+
+  &__header {
+    margin-bottom: 48px;
+  }
+
+  &__billow-img {
+    width: 50vw;
+    border-radius: 40px;
+    margin-bottom: 8px;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__stack {
+    font-size: $smaller-body;
+  }
+
+  &__number {
+    font-size: $smaller-body;
+  }
+
+  &__details {
+    position: relative;
+  }
+
+  &__project-name {
+    margin-bottom: 16px;
+  }
+
+  &__buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__live {
+    @include button;
+    margin-right: 40px; 
+  }
+
+  &__more {
+    text-decoration: underline;
   }
 }
