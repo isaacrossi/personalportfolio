@@ -156,6 +156,9 @@ a {
   height: fit-content;
 }
 
+.selected-work {
+  border-bottom: solid 2px #1f5489;
+}
 .selected-work__content {
   display: flex;
 }
@@ -205,6 +208,37 @@ a {
 }
 .selected-work__more {
   text-decoration: underline;
+}
+
+.footer {
+  background-color: #1f5489;
+  padding-inline: 4rem;
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__content {
+  display: flex;
+}
+.footer__me {
+  border-radius: 40px;
+  width: 50vw;
+  margin-right: 24px;
+}
+.footer__about {
+  color: #f3f5f6;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.footer__email, .footer__twitter, .footer__archive {
+  color: #f3f5f6;
+}
+.footer__email {
+  margin-right: 94px;
 }
 
 /*# sourceMappingURL=app.css.map */

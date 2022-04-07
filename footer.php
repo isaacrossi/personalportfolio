@@ -11,21 +11,22 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'personalportfolio' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'personalportfolio' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'personalportfolio' ), 'personalportfolio', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer class="footer  container">
+		<div class="footer__content">
+			<img class="footer__me" src="<?php bloginfo('template_url');?>/assets/me.jpg">
+			<p class="footer__about">I began learning to code in 2021 because of a strong desire for location independence.</p>
+		</div>
+
+		<div class="footer__links">
+			<div class="footer__socials">
+				<a class="footer__email">isaacjohnrossi@gmail.com</a>
+				<a class="footer__twitter">@isaacrossi</a>
+			</div>
+			<a class="footer__archive">Archive</a>
+		</div>
+		
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
