@@ -74,6 +74,15 @@ a {
 
 .recent-posts {
 
+  &__post {
+    width: 100%;
+    border-bottom: solid 1px $primary-color;
+  }
+
+  &__post:last-child {
+    border-bottom: none;
+  }
+
   &__header {
     margin-bottom: 48px;
   }
@@ -89,15 +98,20 @@ a {
     margin-bottom: 16px;
   }
 
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__subhead {
     max-width: 50vw;
     padding-bottom: 40px;
-    border-bottom: solid 1px $primary-color;
   }
 
-  &__subhead:last-child {
-    border-bottom: none;
+  &__button {
+    @include button;
   }
+
 }
 
 .selected-work {
