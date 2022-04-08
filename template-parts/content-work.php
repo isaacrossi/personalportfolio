@@ -21,7 +21,7 @@
       </p>
       <div class="selected-work__buttons">
         <div class="selected-work__live"><a href="/">Live Site</a></div>
-        <a class="selected-work__more" href="/">More Details</a>
+        <a class="selected-work__github" href="/"> <img src="<?php bloginfo('template_url');?>/assets/github.svg"></a>
       </div>
     </div>
 

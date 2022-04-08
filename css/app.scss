@@ -166,8 +166,10 @@ a {
   }
 
   &__buttons {
+    display: flex;
+    align-items: end;
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     left: 0;
   }
 
@@ -176,9 +178,6 @@ a {
     margin-right: 40px; 
   }
 
-  &__more {
-    text-decoration: underline;
-  }
 }
 
 .footer {
