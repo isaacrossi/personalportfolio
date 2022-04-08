@@ -3,19 +3,19 @@
   src: url("fonts/ObjectSans-Regular.woff2"), url("fonts/ObjectSans-Regular.woff");
 }
 h1 {
-  font-size: 49px;
+  font-size: 3.052rem;
 }
 
 h2 {
-  font-size: 39px;
+  font-size: 2.441rem;
 }
 
 h3 {
-  font-size: 31px;
+  font-size: 1.953rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.563rem;
 }
 
 h1,
@@ -56,6 +56,10 @@ a {
   padding-inline: 4rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f3f5f6;
   color: #1f5489;
@@ -67,7 +71,7 @@ a {
 }
 
 .post-header {
-  padding-block: 24px;
+  padding-block: 2rem;
   margin-inline: 4rem;
   border-bottom: solid 1px #1f5489;
 }
@@ -86,7 +90,7 @@ a {
   align-self: flex-start;
 }
 .hero__button {
-  font-size: 1rem;
+  font-size: 16px;
   display: inline-block;
   margin-top: 24px;
   padding-block: 8px;
@@ -105,11 +109,11 @@ a {
   padding-inline: 250px;
 }
 .entry-content__info {
-  font-size: 1rem;
-  margin-bottom: 16px;
+  font-size: 16px;
+  margin-bottom: 1rem;
 }
 .entry-content__header {
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
 }
 
 .recent-posts__post {
@@ -124,7 +128,7 @@ a {
 }
 .recent-posts__info {
   margin-top: 40px;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: italic;
 }
 .recent-posts__title {
@@ -140,7 +144,7 @@ a {
   padding-bottom: 40px;
 }
 .recent-posts__button {
-  font-size: 1rem;
+  font-size: 16px;
   display: inline-block;
   margin-top: 24px;
   padding-block: 8px;
@@ -148,6 +152,10 @@ a {
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
+}
+.recent-posts a {
+  align-self: end;
+  padding-bottom: 40px;
 }
 
 .selected-work {
@@ -173,10 +181,10 @@ a {
   justify-content: space-between;
 }
 .selected-work__stack {
-  font-size: 1rem;
+  font-size: 16px;
 }
 .selected-work__number {
-  font-size: 1rem;
+  font-size: 16px;
 }
 .selected-work__details {
   position: relative;
@@ -192,7 +200,7 @@ a {
   left: 0;
 }
 .selected-work__live {
-  font-size: 1rem;
+  font-size: 16px;
   display: inline-block;
   margin-top: 24px;
   padding-block: 8px;
@@ -206,10 +214,13 @@ a {
 .footer {
   background-color: #1f5489;
   padding-inline: 4rem;
+}
+.footer__inner {
   padding-top: 72px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  justify-content: space-between;
 }
 .footer__content {
   display: flex;
@@ -228,7 +239,6 @@ a {
 .footer__links {
   display: flex;
   justify-content: space-between;
-  margin-top: 72px;
   margin-bottom: 40px;
 }
 .footer__email, .footer__twitter, .footer__archive {
@@ -236,6 +246,26 @@ a {
 }
 .footer__email {
   margin-right: 94px;
+}
+
+@media (max-width: 1130px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+@media (max-width: 960px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media (max-width: 840px) {
+  :root {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -2,6 +2,10 @@
 @import "variables";
 @import "mixins";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $light-color;
   color: $primary-color;
@@ -30,7 +34,7 @@ a {
 // }
 
 .post-header {
-  padding-block: 24px;
+  padding-block: 2rem;
   margin-inline: 4rem;
   border-bottom: solid 1px $primary-color;
 }
@@ -69,11 +73,11 @@ a {
 
   &__info {
     font-size: $smaller-body;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   &__header {
-    margin-bottom: 24px;
+    margin-bottom: 2rem;
   }
 
 }
@@ -116,6 +120,11 @@ a {
 
   &__button {
     @include button;
+  }
+
+  a {
+    align-self: end;
+    padding-bottom: 40px;
   }
 
 }
@@ -182,10 +191,15 @@ a {
 .footer {
   background-color: $primary-color;
   padding-inline: 4rem;
-  padding-top: 72px;
-  display: flex;
-  flex-direction: column;
-  max-height: 100vh;
+  
+  &__inner {
+    padding-top: 72px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
 
   &__content {
     display: flex;
@@ -208,7 +222,6 @@ a {
   &__links {
     display: flex;
     justify-content: space-between;
-    margin-top: 72px;
     margin-bottom: 40px;
   }
 
@@ -222,4 +235,26 @@ a {
     margin-right: 94px;
   }
   
+}
+
+@media (max-width: 1130px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 840px) {
+  :root {
+    font-size: 10px;
+  }
 }

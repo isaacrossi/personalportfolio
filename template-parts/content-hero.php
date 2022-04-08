@@ -4,12 +4,10 @@
 
   <h1 class="hero__intro">
     Welcome.</br>
-    <span class="reg">I'm Isaac, A frontend developer dreaming of location independence.</span>
+    <span class="reg">I'm Isaac, a frontend developer dreaming of location independence.</span>
   </h1>
 
-  <div class="hero__button">
-   <a>More</a>
-  </div>
+  <a href="#about"><div class="hero__button">More</div></a>
 
 </div>
 
