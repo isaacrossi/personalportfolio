@@ -43,6 +43,7 @@ a {
 
 .container {
   max-width: 1300px;
+  margin-inline: auto;
 }
 
 .reg {
@@ -52,7 +53,7 @@ a {
 .section-padding {
   padding-top: 72px;
   padding-bottom: 120px;
-  margin-inline: 4rem;
+  padding-inline: 4rem;
 }
 
 body {
@@ -72,7 +73,7 @@ a {
 }
 
 .hero {
-  margin-inline: 4rem;
+  padding-inline: 4rem;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -96,7 +97,7 @@ a {
 }
 .hero__image {
   border-radius: 40px;
-  max-width: 30vw;
+  max-width: 35vw;
   align-self: flex-end;
 }
 
@@ -208,6 +209,7 @@ a {
   padding-top: 72px;
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
 }
 .footer__content {
   display: flex;
@@ -220,10 +222,13 @@ a {
 .footer__about {
   color: #f3f5f6;
 }
+.footer__p1 {
+  margin-bottom: 20px;
+}
 .footer__links {
   display: flex;
   justify-content: space-between;
-  margin-top: 120px;
+  margin-top: 72px;
   margin-bottom: 40px;
 }
 .footer__email, .footer__twitter, .footer__archive {

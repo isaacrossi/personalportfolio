@@ -9,6 +9,7 @@ $smaller-body: 1rem;
 //helpers
 .container {
   max-width: 1300px;
+  margin-inline: auto;
 }
 
 .reg {
@@ -18,7 +19,7 @@ $smaller-body: 1rem;
 .section-padding {
   padding-top: 72px;
   padding-bottom: 120px;
-  margin-inline: 4rem;
+  padding-inline: 4rem;
 }
 
 
