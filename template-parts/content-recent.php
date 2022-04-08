@@ -28,7 +28,7 @@
           
           <div class="recent-posts__body">
             <p class="recent-posts__subhead"> <?php the_field('subhead'); ?> </p>
-            <div class="recent-posts__button">Read</div>
+            <a href="<?php the_permalink()?>"><div class="recent-posts__button">Read</div></a>
           </div>
           
         </div>

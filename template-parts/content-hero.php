@@ -1,4 +1,4 @@
-<section class="hero  container section-padding">
+<section class="hero  container  section-padding">
 
 <div class="hero__text">
 

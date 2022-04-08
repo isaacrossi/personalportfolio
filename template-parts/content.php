@@ -11,13 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
+	<?php get_template_part('template-parts/content-header'); ?>
 
-	</header><!-- .entry-header -->
-
-
-
-	<div class="entry-content">
+	<div class="entry-content  section-padding">
 
 	 <p class="entry-content__info"> <?php the_field('date'); ?> - <?php the_field('category'); ?> </p>
 
@@ -30,7 +26,7 @@
 
 
 	<footer class="entry-footer">
-		<?php //personalportfolio_entry_footer(); ?>
+		<?php get_footer(); ?>
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

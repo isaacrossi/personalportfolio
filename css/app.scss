@@ -13,28 +13,34 @@ a {
   color: $primary-color;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+// .header {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
 
-  margin-block: 32px;
-  padding-inline: 64px;
+//   margin-block: 32px;
+//   padding-inline: 64px;
 
-  &__about {
-    margin-right: 40px;
-  }
+//   &__about {
+//     margin-right: 40px;
+//   }
 
-  &__work {
-    margin-right: 40px;
-  }
+//   &__work {
+//     margin-right: 40px;
+//   }
+// }
+
+.post-header {
+  padding-block: 24px;
+  margin-inline: 4rem;
+  border-bottom: solid 1px $primary-color;
 }
 
 .hero {
+  margin-inline: 4rem;
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 
   border-bottom: solid 2px $primary-color;
@@ -53,6 +59,7 @@ a {
   &__image {
     border-radius: 40px;
     max-width: 30vw;
+    align-self: flex-end;
   }
 
 }
