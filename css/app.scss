@@ -40,7 +40,6 @@ a {
 }
 
 .hero {
-  padding-inline: 4rem;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -105,7 +104,7 @@ a {
 
   &__title {
     margin-top: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   &__body {
@@ -170,7 +169,7 @@ a {
   }
 
   &__project-name {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   &__buttons {
@@ -247,6 +246,64 @@ a {
   }
 }
 
+@media (max-width: 1030px) {
+
+  .selected-work {
+
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__project-bio {
+      margin-bottom: 40px;
+    }
+  
+    &__image {
+      margin-top: 72px;
+    }
+  
+    &__buttons {
+      bottom: -32px;
+    }
+  
+  }
+
+  .recent-posts {
+    &__body {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__subhead {
+      padding-bottom: 0px;
+      max-width: 100%;
+    }
+
+    &__button {
+      margin-top: 32px;
+    }
+
+    a {
+      align-self: flex-start;
+      margin-top: 0px;
+    }
+  }
+
+  .footer {
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 24px;
+    }
+
+    &__me {
+      margin-top: 32px;
+    }
+  }
+
+}
+
 @media (max-width: 960px) {
   :root {
     font-size: 12px;
@@ -257,4 +314,115 @@ a {
   :root {
     font-size: 10px;
   }
+}
+
+@media (max-width: 700px) {
+
+  .container {
+    margin-inline: 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    &__text {
+      max-width: 100%;
+    }
+
+    &__image {
+      align-self: auto;
+      margin-top: 32px;
+    }
+
+  }
+
+  .footer {
+    padding-inline: 0px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 8px;
+    $smaller-body: 14px
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  h4 {
+    font-size: 17.5px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .hero {
+    &__button {
+      font-size: 14px;
+    }
+  }
+
+  .selected-work {
+    &__image {
+      width: 100%;
+    }
+
+    &__billow-img {
+      width: 100%;
+    }
+
+    &__stack,
+    &__number {
+      font-size: 14px;
+    }
+  }
+
+  .recent-posts {
+
+    &__info {
+      font-size: 14px;
+    }
+
+    &__button {
+      font-size: 14px;
+    }
+
+  }
+
+  .footer {
+
+    &__me {
+      width: 100%;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__twitter {
+      margin-block: 8px;
+    }
+
+  }
+
+  
 }

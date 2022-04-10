@@ -15,7 +15,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.563rem;
+  font-size: 25px;
 }
 
 h1,
@@ -51,9 +51,9 @@ a {
 }
 
 .section-padding {
-  padding-top: 72px;
-  padding-bottom: 120px;
-  padding-inline: 4rem;
+  padding-top: 4.5rem;
+  padding-bottom: 7.5rem;
+  margin-inline: 4rem;
 }
 
 html {
@@ -77,7 +77,6 @@ a {
 }
 
 .hero {
-  padding-inline: 4rem;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -93,8 +92,8 @@ a {
   font-size: 16px;
   display: inline-block;
   margin-top: 24px;
-  padding-block: 8px;
-  padding-inline: 24px;
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
@@ -133,7 +132,7 @@ a {
 }
 .recent-posts__title {
   margin-top: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .recent-posts__body {
   display: flex;
@@ -147,8 +146,8 @@ a {
   font-size: 16px;
   display: inline-block;
   margin-top: 24px;
-  padding-block: 8px;
-  padding-inline: 24px;
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
@@ -190,7 +189,7 @@ a {
   position: relative;
 }
 .selected-work__project-name {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .selected-work__buttons {
   display: flex;
@@ -203,8 +202,8 @@ a {
   font-size: 16px;
   display: inline-block;
   margin-top: 24px;
-  padding-block: 8px;
-  padding-inline: 24px;
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
@@ -257,6 +256,46 @@ a {
     font-size: 18px;
   }
 }
+@media (max-width: 1030px) {
+  .selected-work__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .selected-work__project-bio {
+    margin-bottom: 40px;
+  }
+  .selected-work__image {
+    margin-top: 72px;
+  }
+  .selected-work__buttons {
+    bottom: -32px;
+  }
+
+  .recent-posts__body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .recent-posts__subhead {
+    padding-bottom: 0px;
+    max-width: 100%;
+  }
+  .recent-posts__button {
+    margin-top: 32px;
+  }
+  .recent-posts a {
+    align-self: flex-start;
+    margin-top: 0px;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 24px;
+  }
+  .footer__me {
+    margin-top: 32px;
+  }
+}
 @media (max-width: 960px) {
   :root {
     font-size: 12px;
@@ -265,6 +304,88 @@ a {
 @media (max-width: 840px) {
   :root {
     font-size: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    margin-inline: 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero__text {
+    max-width: 100%;
+  }
+  .hero__image {
+    align-self: auto;
+    margin-top: 32px;
+  }
+
+  .footer {
+    padding-inline: 0px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  h4 {
+    font-size: 17.5px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .hero__button {
+    font-size: 14px;
+  }
+
+  .selected-work__image {
+    width: 100%;
+  }
+  .selected-work__billow-img {
+    width: 100%;
+  }
+  .selected-work__stack, .selected-work__number {
+    font-size: 14px;
+  }
+
+  .recent-posts__info {
+    font-size: 14px;
+  }
+  .recent-posts__button {
+    font-size: 14px;
+  }
+
+  .footer__me {
+    width: 100%;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .footer__socials {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__twitter {
+    margin-block: 8px;
   }
 }
 
