@@ -32,7 +32,7 @@ p {
 
 body {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.7;
   font-family: "Object Sans";
 }
 
@@ -105,7 +105,7 @@ a {
 }
 
 .entry-content {
-  padding-inline: 250px;
+  padding-inline: 216px;
 }
 .entry-content__info {
   font-size: 16px;
@@ -247,6 +247,11 @@ a {
   margin-right: 94px;
 }
 
+@media (max-width: 1180px) {
+  .entry-content {
+    padding-inline: 160px;
+  }
+}
 @media (max-width: 1130px) {
   :root {
     font-size: 14px;
@@ -301,12 +306,24 @@ a {
     font-size: 12px;
   }
 }
+.entry-content {
+  padding-inline: 100px;
+}
+
 @media (max-width: 840px) {
   :root {
     font-size: 10px;
   }
+
+  .entry-content {
+    padding-inline: 64px;
+  }
 }
 @media (max-width: 700px) {
+  .entry-content {
+    padding-inline: 32px;
+  }
+
   .container {
     margin-inline: 2rem;
   }
@@ -323,6 +340,12 @@ a {
   }
 
   .footer {
+    padding-inline: 0px;
+  }
+}
+@media (max-width: 660px) {
+  .entry-content {
+    margin-inline: 10px;
     padding-inline: 0px;
   }
 }
@@ -349,6 +372,10 @@ a {
 
   a {
     font-size: 14px;
+  }
+
+  .entry-content {
+    font-size: 18px;
   }
 
   .hero__button {

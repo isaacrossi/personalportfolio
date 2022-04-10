@@ -68,7 +68,7 @@ a {
 
 .entry-content {
 
-  padding-inline: 250px;
+  padding-inline: 216px;
 
   &__info {
     font-size: $smaller-body;
@@ -236,6 +236,12 @@ a {
   
 }
 
+@media (max-width: 1180px) {
+  .entry-content {
+    padding-inline: 160px;
+  }
+}  
+
 @media (max-width: 1130px) {
   :root {
     font-size: 14px;
@@ -310,13 +316,26 @@ a {
   }
 }
 
+.entry-content {
+  padding-inline: 100px;
+}
+
 @media (max-width: 840px) {
+
   :root {
     font-size: 10px;
+  }
+
+  .entry-content {
+    padding-inline: 64px;
   }
 }
 
 @media (max-width: 700px) {
+
+  .entry-content {
+    padding-inline: 32px;
+  }
 
   .container {
     margin-inline: 2rem;
@@ -340,6 +359,13 @@ a {
     padding-inline: 0px;
   }
 
+}
+
+@media (max-width: 660px) {
+  .entry-content {
+    margin-inline: 10px;
+    padding-inline: 0px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -366,6 +392,10 @@ a {
 
   a {
     font-size: 14px;
+  }
+
+  .entry-content {
+    font-size: 18px;
   }
 
   .hero {
