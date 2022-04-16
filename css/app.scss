@@ -99,7 +99,8 @@ a {
   &__info {
     margin-top: 40px;
     font-size: $smaller-body;
-    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   &__title {
@@ -344,11 +345,11 @@ a {
     flex-direction: column;
 
     &__text {
-      max-width: 100%;
+      max-width: 550px;
     }
 
     &__image {
-      align-self: auto;
+      align-self: start;
       margin-top: 32px;
     }
 
@@ -400,6 +401,10 @@ a {
   .hero {
     &__button {
       font-size: 14px;
+    }
+
+    &__text {
+      max-width: 440px;
     }
   }
 
@@ -453,5 +458,12 @@ a {
 
   }
 
-  
+  @media (max-width: 490px) {
+    .hero {
+      &__text {
+        max-width: 360px;
+      }
+    }
+  }
+
 }

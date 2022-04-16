@@ -128,7 +128,8 @@ a {
 .recent-posts__info {
   margin-top: 40px;
   font-size: 16px;
-  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 .recent-posts__title {
   margin-top: 8px;
@@ -332,10 +333,10 @@ a {
     flex-direction: column;
   }
   .hero__text {
-    max-width: 100%;
+    max-width: 550px;
   }
   .hero__image {
-    align-self: auto;
+    align-self: start;
     margin-top: 32px;
   }
 
@@ -381,6 +382,9 @@ a {
   .hero__button {
     font-size: 14px;
   }
+  .hero__text {
+    max-width: 440px;
+  }
 
   .selected-work__image {
     width: 100%;
@@ -413,6 +417,11 @@ a {
   }
   .footer__twitter {
     margin-block: 8px;
+  }
+}
+@media (max-width: 600px) and (max-width: 490px) {
+  .hero__text {
+    max-width: 360px;
   }
 }
 
