@@ -71,8 +71,10 @@ a {
   padding-inline: 240px;
 
   &__info {
+    margin-top: 40px;
     font-size: $smaller-body;
-    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   &__header {
@@ -98,7 +100,7 @@ a {
 
   &__info {
     margin-top: 40px;
-    font-size: $smaller-body;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
@@ -433,6 +435,12 @@ a {
       font-size: 14px;
     }
 
+  }
+
+  .recent-posts {
+    &__info {
+      font-size: 12px;
+    }
   }
 
   .footer {

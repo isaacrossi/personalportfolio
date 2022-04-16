@@ -24,7 +24,7 @@
         <div  class="recent-posts__post">
           <p class="recent-posts__info"> <?php the_field('date'); ?> - <?php the_field('category'); ?> </p>
 
-          <h4 class="recent-posts__title"> <?php the_title(); ?> </h4>
+          <h3 class="recent-posts__title"> <?php the_title(); ?> </h3>
           
           <div class="recent-posts__body">
             <p class="recent-posts__subhead"> <?php the_field('subhead'); ?> </p>
