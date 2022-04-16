@@ -68,7 +68,7 @@ a {
 
 .entry-content {
 
-  padding-inline: 216px;
+  padding-inline: 240px;
 
   &__info {
     font-size: $smaller-body;
@@ -238,7 +238,7 @@ a {
 
 @media (max-width: 1180px) {
   .entry-content {
-    padding-inline: 160px;
+    padding-inline: 180px;
   }
 }  
 
@@ -314,10 +314,9 @@ a {
   :root {
     font-size: 12px;
   }
-}
-
-.entry-content {
-  padding-inline: 100px;
+  .entry-content {
+    padding-inline: 100px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -363,7 +362,7 @@ a {
 
 @media (max-width: 660px) {
   .entry-content {
-    margin-inline: 10px;
+    margin-inline: 2rem;
     padding-inline: 0px;
   }
 }
