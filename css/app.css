@@ -183,7 +183,9 @@ a {
   justify-content: space-between;
 }
 .selected-work__stack {
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 .selected-work__number {
   font-size: 16px;
@@ -197,9 +199,6 @@ a {
 .selected-work__buttons {
   display: flex;
   align-items: end;
-  position: absolute;
-  bottom: -8px;
-  left: 0;
 }
 .selected-work__live {
   font-size: 16px;
@@ -267,16 +266,13 @@ a {
 @media (max-width: 1030px) {
   .selected-work__content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
-  .selected-work__project-bio {
-    margin-bottom: 40px;
+  .selected-work__project-name {
+    margin-top: 8px;
   }
-  .selected-work__image {
-    margin-top: 72px;
-  }
-  .selected-work__buttons {
-    bottom: -32px;
+  .selected-work__billow-img {
+    margin-bottom: 32px;
   }
 
   .recent-posts__body {
@@ -394,8 +390,8 @@ a {
   .selected-work__billow-img {
     width: 100%;
   }
-  .selected-work__stack, .selected-work__number {
-    font-size: 14px;
+  .selected-work__stack {
+    font-size: 12px;
   }
 
   .recent-posts__info {

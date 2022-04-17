@@ -7,7 +7,7 @@
     <span class="reg">I'm Isaac, a frontend developer dreaming of location independence.</span>
   </h1>
 
-  <a href="#about"><div class="hero__button">More</div></a>
+  <a href="#about"><div class="hero__button">Blog</div></a>
 
 </div>
 

@@ -160,7 +160,9 @@ a {
   }
 
   &__stack {
-    font-size: $smaller-body;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   &__number {
@@ -178,9 +180,6 @@ a {
   &__buttons {
     display: flex;
     align-items: end;
-    position: absolute;
-    bottom: -8px;
-    left: 0;
   }
 
   &__live {
@@ -261,19 +260,15 @@ a {
 
     &__content {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
 
-    &__project-bio {
-      margin-bottom: 40px;
+    &__project-name {
+      margin-top: 8px;
     }
-  
-    &__image {
-      margin-top: 72px;
-    }
-  
-    &__buttons {
-      bottom: -32px;
+
+    &__billow-img {
+      margin-bottom: 32px;
     }
   
   }
@@ -419,9 +414,8 @@ a {
       width: 100%;
     }
 
-    &__stack,
-    &__number {
-      font-size: 14px;
+    &__stack {
+      font-size: 12px;
     }
   }
 
