@@ -26,11 +26,14 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'personalportfolio' ); ?></a>
 
 	<header id="masthead" class="header  container">
-<!-- 	 
-	 <nav class="header__nav">
-		 <a class="header__about">About</a>
-		 <a class="header__work">Work</a>
-		 <a class="header__blog">Blog</a>
-	 </nav> -->
 
-	</header><!-- #masthead -->
+	<a href="/"><img src="<?php bloginfo('template_url');?>/assets/isaac-rossi.svg" class="header__logo"></a>
+	 
+	 <nav class="header__nav">
+		 <a href="#about" class="header__about">About</a>
+		 <a href="#work" class="header__work">Work</a>
+		 <a class="header__blog">Blog</a>
+	 </nav>
+
+	</header> <!-- #masthead -->
+

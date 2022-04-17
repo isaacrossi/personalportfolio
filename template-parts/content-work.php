@@ -1,4 +1,4 @@
-<section class="selected-work  container section-padding">
+<section class="selected-work  container section-padding" id="work">
 
   <h2 class="selected-work__header">
     <span class="reg">Selected</span> Work

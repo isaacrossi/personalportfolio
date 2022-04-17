@@ -70,10 +70,20 @@ a {
   color: #1f5489;
 }
 
-.post-header {
-  padding-block: 2rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
   margin-inline: 4rem;
   border-bottom: solid 1px #1f5489;
+}
+.header__logo {
+  max-width: 6.75rem;
+  min-width: 80px;
+}
+.header__about, .header__work {
+  margin-right: 40px;
 }
 
 .hero {
@@ -92,8 +102,8 @@ a {
   font-size: 16px;
   display: inline-block;
   margin-top: 24px;
-  padding-block: 0.5em;
-  padding-inline: 1.5em;
+  padding-block: 0.75em;
+  padding-inline: 1.75em;
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
@@ -149,8 +159,8 @@ a {
   font-size: 16px;
   display: inline-block;
   margin-top: 24px;
-  padding-block: 0.5em;
-  padding-inline: 1.5em;
+  padding-block: 0.75em;
+  padding-inline: 1.75em;
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
@@ -204,8 +214,8 @@ a {
   font-size: 16px;
   display: inline-block;
   margin-top: 24px;
-  padding-block: 0.5em;
-  padding-inline: 1.5em;
+  padding-block: 0.75em;
+  padding-inline: 1.75em;
   border: solid 1px #1f5489;
   border-radius: 24px;
   height: fit-content;
@@ -390,6 +400,9 @@ a {
   .selected-work__billow-img {
     width: 100%;
   }
+  .selected-work__live {
+    font-size: 14px;
+  }
   .selected-work__stack {
     font-size: 12px;
   }
@@ -422,6 +435,10 @@ a {
   }
 }
 @media (max-width: 600px) and (max-width: 490px) {
+  .header__about, .header__work {
+    margin-right: 16px;
+  }
+
   .hero__text {
     max-width: 360px;
   }
