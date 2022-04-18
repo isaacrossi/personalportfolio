@@ -1,10 +1,10 @@
 @mixin button {
   font-size: $smaller-body;
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 32px;
   padding-block: 0.75em;
   padding-inline: 1.75em;
   border: solid 1px $primary-color;
-  border-radius: 24px;
+  border-radius: 32px;
   height: fit-content;
 }

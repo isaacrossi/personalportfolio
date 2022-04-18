@@ -16,7 +16,7 @@
 			<div class="footer__content">
 				<img class="footer__me" src="<?php bloginfo('template_url');?>/assets/me.jpg">
 				<div  class="footer__about">
-					<p class="footer__p1">Hey! I'm Isaac Rossi, a frontend developer based in Sydney, Australia. I began learning web developement in 2021 because I love to travel and the idea of working anywhere in the world is what motivates me to continue learning to code everyday. </p>
+					<p class="footer__p1">Hey! I'm Isaac Rossi, a web developer based in Sydney, Australia. I began learning web developement in 2021 with a goal of becomming location independent.</p>
 					
 					<p>I've got plenty more to learn about web development and how to use these skills to be location independent. I document this jouney on my blog hoping to inspire and be inspired by anyone who shares are similar deam to mine.</p>
 				</div>

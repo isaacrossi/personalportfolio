@@ -101,11 +101,11 @@ a {
 .hero__button {
   font-size: 16px;
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 32px;
   padding-block: 0.75em;
   padding-inline: 1.75em;
   border: solid 1px #1f5489;
-  border-radius: 24px;
+  border-radius: 32px;
   height: fit-content;
 }
 .hero__image {
@@ -127,15 +127,18 @@ a {
   margin-bottom: 2rem;
 }
 
+.recent-posts__header {
+  margin-bottom: 48px;
+}
 .recent-posts__post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-bottom: solid 1px #1f5489;
 }
-.recent-posts__post:last-child {
+.recent-posts__text:last-child {
   border-bottom: none;
-}
-.recent-posts__header {
-  margin-bottom: 48px;
 }
 .recent-posts__info {
   margin-top: 40px;
@@ -147,26 +150,25 @@ a {
   margin-top: 8px;
   margin-bottom: 24px;
 }
-.recent-posts__body {
-  display: flex;
-  justify-content: space-between;
+.recent-posts__image {
+  max-width: 25%;
+  border-radius: 40px;
 }
 .recent-posts__subhead {
   max-width: 50vw;
-  padding-bottom: 40px;
 }
 .recent-posts__button {
   font-size: 16px;
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 32px;
   padding-block: 0.75em;
   padding-inline: 1.75em;
   border: solid 1px #1f5489;
-  border-radius: 24px;
+  border-radius: 32px;
   height: fit-content;
+  margin-bottom: 40px;
 }
 .recent-posts a {
-  align-self: end;
   padding-bottom: 40px;
 }
 
@@ -213,11 +215,11 @@ a {
 .selected-work__live {
   font-size: 16px;
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 32px;
   padding-block: 0.75em;
   padding-inline: 1.75em;
   border: solid 1px #1f5489;
-  border-radius: 24px;
+  border-radius: 32px;
   height: fit-content;
   margin-right: 40px;
 }

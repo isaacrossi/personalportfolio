@@ -97,17 +97,20 @@ a {
 
 .recent-posts {
 
+  &__header {
+    margin-bottom: 48px;
+  }
+
   &__post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     border-bottom: solid 1px $primary-color;
   }
 
-  &__post:last-child {
+  &__text:last-child {
     border-bottom: none;
-  }
-
-  &__header {
-    margin-bottom: 48px;
   }
 
   &__info {
@@ -122,22 +125,26 @@ a {
     margin-bottom: 24px;
   }
 
-  &__body {
-    display: flex;
-    justify-content: space-between;
+  &__image {
+    max-width: 25%;
+    border-radius: 40px;
   }
+
+  // &__body {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
 
   &__subhead {
     max-width: 50vw;
-    padding-bottom: 40px;
   }
 
   &__button {
     @include button;
+    margin-bottom: 40px;
   }
 
   a {
-    align-self: end;
     padding-bottom: 40px;
   }
 
