@@ -82,15 +82,22 @@ a {
 
   padding-inline: 240px;
 
+  &__header {
+    margin-bottom: 2.5rem;
+  }
+
+  &__image {
+    border-radius: 40px;
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+  
+
   &__info {
     margin-top: 40px;
     font-size: $smaller-body;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-  }
-
-  &__header {
-    margin-bottom: 2rem;
   }
 
 }
@@ -126,7 +133,7 @@ a {
   }
 
   &__image {
-    max-width: 25%;
+    max-width: 40%;
     border-radius: 40px;
   }
 
@@ -412,6 +419,10 @@ a {
 
   .entry-content {
     font-size: 18px;
+
+    &__info {
+      font-size: 14px;
+    }
   }
 
   .hero {

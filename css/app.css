@@ -117,14 +117,19 @@ a {
 .entry-content {
   padding-inline: 240px;
 }
+.entry-content__header {
+  margin-bottom: 2.5rem;
+}
+.entry-content__image {
+  border-radius: 40px;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
 .entry-content__info {
   margin-top: 40px;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-}
-.entry-content__header {
-  margin-bottom: 2rem;
 }
 
 .recent-posts__header {
@@ -151,7 +156,7 @@ a {
   margin-bottom: 24px;
 }
 .recent-posts__image {
-  max-width: 25%;
+  max-width: 40%;
   border-radius: 40px;
 }
 .recent-posts__subhead {
@@ -387,6 +392,9 @@ a {
 
   .entry-content {
     font-size: 18px;
+  }
+  .entry-content__info {
+    font-size: 14px;
   }
 
   .hero__button {
