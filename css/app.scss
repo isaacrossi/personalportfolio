@@ -379,7 +379,7 @@ a {
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     &__text {
       max-width: 550px;
@@ -387,7 +387,7 @@ a {
 
     &__image {
       align-self: start;
-      margin-top: 32px;
+      margin-bottom: 32px;
     }
 
   }
