@@ -18,6 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
    <?php
 
+		get_template_part('template-parts/content-header');
     get_template_part('template-parts/content-hero');
 		get_template_part('template-parts/content-work');
 		get_template_part('template-parts/content-recent');

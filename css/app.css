@@ -8,6 +8,7 @@ h1 {
 
 h2 {
   font-size: 2.441rem;
+  margin-bottom: 4rem;
 }
 
 h3 {
@@ -133,7 +134,7 @@ a {
 }
 
 .recent-posts__header {
-  margin-bottom: 48px;
+  margin-bottom: 4rem;
 }
 .recent-posts__post {
   display: flex;
@@ -142,11 +143,10 @@ a {
   width: 100%;
   border-bottom: solid 1px #1f5489;
 }
-.recent-posts__text:last-child {
+.recent-posts__post:last-child {
   border-bottom: none;
 }
 .recent-posts__info {
-  margin-top: 40px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -188,7 +188,7 @@ a {
   margin-right: 64px;
 }
 .selected-work__header {
-  margin-bottom: 48px;
+  margin-bottom: 4rem;
 }
 .selected-work__billow-img {
   width: 50vw;
@@ -265,6 +265,9 @@ a {
 .footer__email {
   margin-right: 94px;
 }
+.footer__archive {
+  text-decoration: line-through;
+}
 
 @media (max-width: 1180px) {
   .entry-content {
@@ -292,13 +295,20 @@ a {
     margin-bottom: 32px;
   }
 
+  .recent-posts__post {
+    flex-direction: column-reverse;
+  }
   .recent-posts__body {
     flex-direction: column;
     align-items: flex-start;
   }
+  .recent-posts__image {
+    align-self: flex-start;
+    margin-bottom: 32px;
+  }
   .recent-posts__subhead {
     padding-bottom: 0px;
-    max-width: 100%;
+    max-width: 75%;
   }
   .recent-posts__button {
     margin-top: 32px;
@@ -423,9 +433,15 @@ a {
   .recent-posts__button {
     font-size: 14px;
   }
+  .recent-posts__image {
+    max-width: 100%;
+  }
 
   .recent-posts__info {
     font-size: 12px;
+  }
+  .recent-posts__subhead {
+    max-width: 100%;
   }
 
   .footer__me {

@@ -105,7 +105,7 @@ a {
 .recent-posts {
 
   &__header {
-    margin-bottom: 48px;
+    margin-bottom: 4rem;
   }
 
   &__post {
@@ -116,12 +116,11 @@ a {
     border-bottom: solid 1px $primary-color;
   }
 
-  &__text:last-child {
+  &__post:last-child {
     border-bottom: none;
   }
 
   &__info {
-    margin-top: 40px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -171,7 +170,7 @@ a {
   }
 
   &__header {
-    margin-bottom: 48px;
+    margin-bottom: 4rem;
   }
 
   &__billow-img {
@@ -261,6 +260,10 @@ a {
   &__email {
     margin-right: 94px;
   }
+
+  &__archive {
+    text-decoration: line-through;
+  }
   
 }
 
@@ -300,14 +303,24 @@ a {
   }
 
   .recent-posts {
+
+    &__post {
+      flex-direction: column-reverse;
+    }
+
     &__body {
       flex-direction: column;
       align-items: flex-start;
     }
 
+    &__image {
+      align-self: flex-start;
+      margin-bottom: 32px;
+    }
+
     &__subhead {
       padding-bottom: 0px;
-      max-width: 100%;
+      max-width: 75%;
     }
 
     &__button {
@@ -330,6 +343,7 @@ a {
     &__me {
       margin-top: 32px;
     }
+
   }
 
 }
@@ -463,11 +477,19 @@ a {
       font-size: 14px;
     }
 
+    &__image {
+      max-width: 100%;
+    }
+
   }
 
   .recent-posts {
     &__info {
       font-size: 12px;
+    }
+
+    &__subhead {
+      max-width: 100%;
     }
   }
 

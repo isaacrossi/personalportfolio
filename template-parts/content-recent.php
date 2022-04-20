@@ -1,4 +1,4 @@
-<section class="recent-posts  container section-padding">
+<section class="recent-posts  container section-padding" id="blog">
 
 
   <h2 class="recent-posts__header">

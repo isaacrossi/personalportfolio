@@ -11,8 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	
-
 	<div class="entry-content  section-padding">
 
 		<img src="<?php the_field('hero_image'); ?>" class="entry-content__image">

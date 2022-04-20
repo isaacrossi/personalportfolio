@@ -27,13 +27,13 @@
 
 	<header id="masthead" class="header  container">
 
-	<a href="/"><img src="<?php bloginfo('template_url');?>/assets/isaac-rossi.svg" class="header__logo"></a>
-	 
-	 <nav class="header__nav">
-		 <a href="#about" class="header__about">About</a>
-		 <a href="#work" class="header__work">Work</a>
-		 <a class="header__blog">Blog</a>
-	 </nav>
+		<a href="/"><img src="<?php bloginfo('template_url');?>/assets/isaac-rossi.svg" class="header__logo"></a>
+		
+		<nav class="header__nav">
+			<a href="#about" class="header__about">About</a>
+			<a href="#work" class="header__work">Work</a>
+			<a href="#blog" class="header__blog">Blog</a>
+		</nav>
 
-	</header> <!-- #masthead -->
+	</header>
 

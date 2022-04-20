@@ -12,7 +12,8 @@
  * @package personalportfolio
  */
 
-get_header();
+get_header('header-single');
+
 ?>
 
 	<main id="primary" class="site-main">
