@@ -14,6 +14,7 @@
       $args = array(
         'posts_per_page' => 3,
         'orderby' => 'date',
+        'category_name' => 'blog post'
       );
       // a variable with our query and options
       $query = new WP_Query( $args );
@@ -23,7 +24,7 @@
     ?>
         <div class="recent-posts__post">
 
-          <div>
+          <div class="recent-posts__content">
             <p class="recent-posts__info"> <?php the_field('date'); ?> - <?php the_field('category'); ?> </p>
 
             <h3 class="recent-posts__title"> <?php the_title(); ?> </h3>

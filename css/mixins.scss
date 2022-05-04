@@ -1,7 +1,7 @@
 @mixin button {
   font-size: $smaller-body;
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 2rem;
   padding-block: 0.75em;
   padding-inline: 1.75em;
   border: solid 1px $primary-color;

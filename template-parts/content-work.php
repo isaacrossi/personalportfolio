@@ -7,8 +7,9 @@
   <?php
       // organise our options into a data object
     $args = array(
-      'posts_per_page' => 2,
+      'posts_per_page' => 3,
       'orderby' => 'date',
+      'category_name' => 'project'
     );
     // a variable with our query and options
     $query = new WP_Query( $args );

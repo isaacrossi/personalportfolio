@@ -51,6 +51,8 @@ a {
   }
 }
 
+
+
 .hero {
   position: relative;
   display: flex;
@@ -94,7 +96,7 @@ a {
   
 
   &__info {
-    margin-top: 40px;
+    margin-top: 2.5rem; // 40px
     font-size: $smaller-body;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -114,10 +116,17 @@ a {
     align-items: center;
     width: 100%;
     border-bottom: solid 1px $primary-color;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__post:first-child {
+    padding-top: 0px;
   }
 
   &__post:last-child {
     border-bottom: none;
+    padding-bottom: 0px;
   }
 
   &__info {
@@ -127,8 +136,8 @@ a {
   }
 
   &__title {
-    margin-top: 8px;
-    margin-bottom: 24px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   &__image {
@@ -147,11 +156,11 @@ a {
 
   &__button {
     @include button;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   a {
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 
 }
@@ -162,6 +171,20 @@ a {
 
   &__content {
     display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1px $primary-color;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  &__content:first-of-type {
+    padding-top: 0px;
+  }
+
+  &__content:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
   }
 
   &__image {
@@ -176,7 +199,7 @@ a {
   &__billow-img {
     width: 50vw;
     border-radius: 40px;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 
   &__caption {
@@ -199,19 +222,20 @@ a {
   }
 
   &__project-name {
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
   }
 
   &__buttons {
     display: flex;
     align-items: end;
+    margin-bottom: 2.5rem;
+
   }
 
   &__live {
     @include button;
-    margin-right: 40px; 
+    margin-right: 2.5rem; 
   }
-
 }
 
 .footer {
@@ -290,6 +314,7 @@ a {
     &__content {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &__project-name {
@@ -306,6 +331,11 @@ a {
 
     &__post {
       flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    &__content {
+      width: 75%;
     }
 
     &__body {
@@ -320,11 +350,11 @@ a {
 
     &__subhead {
       padding-bottom: 0px;
-      max-width: 75%;
+      max-width: 100%; 
     }
 
     &__button {
-      margin-top: 32px;
+      margin-top: 2rem;
     }
 
     a {
@@ -380,14 +410,24 @@ a {
 
   .hero {
     flex-direction: column-reverse;
+    align-items: center;
 
     &__text {
-      max-width: 550px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 450px;
+      align-self: center;
+      text-align: center;
     }
 
     &__image {
-      align-self: start;
       margin-bottom: 32px;
+      align-self: center;
+    }
+
+    &__button {
+      align-self: center;
     }
 
   }
@@ -445,7 +485,7 @@ a {
     }
 
     &__text {
-      max-width: 440px;
+      max-width: 360px;
     }
   }
 
@@ -468,6 +508,14 @@ a {
   }
 
   .recent-posts {
+
+    &__content {
+      width: 100%;
+    }
+
+    &__subhead {
+      max-width: 100vw;
+    }
 
     &__info {
       font-size: 14px;
